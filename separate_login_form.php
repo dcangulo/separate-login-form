@@ -29,12 +29,10 @@ class separateLoginForm {
 	private $wpdb;
 	private $error;
 	private $error_msg;
-	private $admin_url;
 
 	public function __construct() {
 		global $wpdb;
 		$this->wpdb = $wpdb;
-		$this->admin_url = home_url() . '/wp-admin/';
 
 		add_action('init', array($this, 'separate_login'));
 		add_shortcode('separate_login_form', array($this, 'separate_login_form_shortcode'));
@@ -60,7 +58,7 @@ class separateLoginForm {
 				$this->error_msg = $user->get_error_message();
   		}
   		else {
-  			wp_redirect($this->admin_url);
+  			wp_redirect(admin_url());
 			  exit;
   		}
 		}
@@ -104,7 +102,7 @@ class separateLoginForm {
 		<?php
 		}
 		else {
-			echo "<meta http-equiv='refresh' content='0;URL='$this->admin_url'>";
+			echo "<meta http-equiv='refresh' content='0;URL='" . admin_url() . "'>";
 		}
 	}
 
