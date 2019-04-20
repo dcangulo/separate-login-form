@@ -39,8 +39,14 @@ class SeparateLoginForm {
 		$this->wpdb = $wpdb;
 
 		add_action('init', array($this, 'separate_login'));
+    add_action('wp_enqueue_scripts', array($this, 'separate_login_form_style'));
 		add_shortcode('separate_login_form', array($this, 'separate_login_form_shortcode'));
 	}
+
+  public function separate_login_form_style() {
+    wp_register_style('separate-login-form-style', plugin_dir_url(__FILE__) . 'style.css');
+    wp_enqueue_style('separate-login-form-style');
+  }
 
 	public function separate_login() {
 		$this->error = false;

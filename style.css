@@ -1,0 +1,12 @@
+.slf-label {
+  font-weight: bold;
+}
+
+.slf-form-control {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.slf-pull-right {
+  float: right;
+}
