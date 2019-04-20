@@ -37,6 +37,7 @@ class SeparateLoginForm {
 		global $wpdb;
 
 		$this->wpdb = $wpdb;
+    $this->error_msg = '';
 
 		add_action('init', array($this, 'separate_login'));
     add_action('wp_enqueue_scripts', array($this, 'separate_login_form_style'));
@@ -49,8 +50,6 @@ class SeparateLoginForm {
   }
 
 	public function separate_login() {
-		$this->error = false;
-
 		if ( isset($_POST['login']) ) {
 			$username = $this->wpdb->escape($_POST['username']);
 			$password = $this->wpdb->escape($_POST['password']);
@@ -65,8 +64,7 @@ class SeparateLoginForm {
 			$user = wp_signon($user_data);
 
 			if ( is_wp_error($user) ) {
-				$this->error = true;
-				$this->error_msg = $user->get_error_message();
+				$this->error_msg = $user->get_error_message() . '<br><br>';
   		}
   		else {
   			wp_redirect(admin_url());

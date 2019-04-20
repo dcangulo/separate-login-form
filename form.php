@@ -1,5 +1,5 @@
 <form action='<?php echo esc_url($_SERVER["REQUEST_URI"]); ?>' method='post'>
-  <?php if ( $this->error ) echo "$this->error_msg<br><br>"; ?>
+  <?php echo $this->error_msg; ?>
     <label for='username' class='slf-label'>
       Username:
     </label>
