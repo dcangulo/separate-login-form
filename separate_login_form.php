@@ -71,7 +71,7 @@ class SeparateLoginForm {
 
 	public function separate_login_form() {
 		if ( is_user_logged_in() ) {
-      echo "<meta http-equiv='refresh' content='0;URL='" . admin_url() . "'>";
+      echo "<meta http-equiv='refresh' content='0;URL=" . admin_url() . "'>";
 		}
 		else {
       ?>
