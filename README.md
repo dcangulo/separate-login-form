@@ -6,7 +6,7 @@
 
 Use the shortcode `[separate_login_form]` to show a WordPress login form on any page, post, or even custom post types.
 
-## Description
+Please rate and review the plugin if you find it useful.
 
 Find my other works here: [https://www.davidangulo.xyz/portfolio/](https://www.davidangulo.xyz/portfolio/)
 
@@ -14,12 +14,12 @@ Find my other works here: [https://www.davidangulo.xyz/portfolio/](https://www.d
 
 For step by step installation guide with visuals, you may refer to this [link](https://www.davidangulo.xyz/how-to-crate-a-separate-login-page-in-wordpress/) instead.
 
-1\. In your WordPress admin menu on the left hover to Plugins and click Add New.
-2\. Enter "**Separate Login Form**" in the text box in the upper right corner.
-3\. Find the plugin entitled **Separate Login Form** by **David Angulo** then click Install Now.
-4\. Click Activate once the plugin is installed.
-5\. In your WordPress admin menu on the left hover to Pages and click Add New.
-6\. In the content editor paste the shortcode `[separate_login_form]` and click Publish.
+1. In your WordPress admin menu on the left hover to Plugins and click Add New.
+2. Enter "**Separate Login Form**" in the text box in the upper right corner.
+3. Find the plugin entitled **Separate Login Form** by **David Angulo** then click Install Now.
+4. Click Activate once the plugin is installed.
+5. In your WordPress admin menu on the left hover to Pages and click Add New.
+6. In the content editor paste the shortcode `[separate_login_form]` and click Publish.
 
 ## Frequently Asked Questions
 
@@ -35,8 +35,8 @@ Please read [Contribute to someone's repository](http://kbroman.org/github_tutor
 Version 2.0.0
 
 ## TODO
-1\. Add CAPTCHA.
-2\. Support different form designs.
+1. Add CAPTCHA.
+2. Support different form designs.
 
 ## License
 Copyright © 2019 David Angulo, released under the MIT license, see [LICENSE](LICENSE).
