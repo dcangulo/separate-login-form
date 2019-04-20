@@ -39,4 +39,4 @@ Version 2.0.0
 2. Support different form designs.
 
 ## License
-Copyright © 2019 David Angulo, released under the MIT license, see [LICENSE](LICENSE).
+Copyright © 2019 David Angulo, released under the GPL2 license, see [LICENSE](LICENSE).
