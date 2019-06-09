@@ -1,6 +1,12 @@
+![](https://ps.w.org/separate-login-form/assets/screenshot-1.jpg)
+
 # Separate Login Form
 
-![](https://ps.w.org/separate-login-form/assets/screenshot-1.jpg)
+[![GitHub version](https://badge.fury.io/gh/dcangulo%2Fseparate-login-form.svg)](https://badge.fury.io/gh/dcangulo%2Fseparate-login-form)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/dcangulo/separate-login-form/graphs/commit-activity)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/dcangulo/separate-login-form/pulls)
+[![GPLv2 license](https://img.shields.io/badge/License-GPLv2-blue.svg)](LICENSE)
+[![saythanks](https://img.shields.io/badge/say-thanks-ff69b4.svg)](https://wordpress.org/support/plugin/separate-login-form/reviews/#new-post)
 
 **Separate Login Form** is a simple and lightweight plugin that can show a login form on any page/post.
 
@@ -36,7 +42,11 @@ Version 2.0.0
 
 ## TODO
 1. Add CAPTCHA.
-2. Support different form designs.
+2. Support different form designs and custom CSS styles.
+3. Disable default WordPress login.
+4. Seprate logout page.
+5. Add Gutenberg block.
+6. Track failed login attempts.
 
 ## License
 Copyright © 2019 David Angulo, released under the GPL2 license, see [LICENSE](LICENSE).
