@@ -26,7 +26,7 @@
 */
 
 require_once('constants.php');
-require_once('classes/hcaptcha_handler.php');
+require_once('classes/slf_hcaptcha_handler.php');
 require_once('classes/separate_login_form.php');
 
 $separate_login_form = new SeparateLoginForm();

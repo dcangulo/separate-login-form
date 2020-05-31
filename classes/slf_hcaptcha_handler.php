@@ -1,5 +1,5 @@
 <?php
-class HCaptchaHandler {
+class SlfHCaptchaHandler {
   private $verify_url = 'https://hcaptcha.com/siteverify';
   private $error_message = '';
   private $token;
@@ -15,7 +15,7 @@ class HCaptchaHandler {
     $response = file_get_contents($this->verify_url, false, $context);
     $json_response = json_decode($response, true);
 
-    if($json_response['success']) return true;
+    if ($json_response['success']) return true;
 
     $error_code = $json_response['error-codes'][0];
     $this->error_message = $this->error_code_to_message($error_code);

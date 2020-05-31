@@ -35,7 +35,7 @@ class SeparateLoginForm {
   public function slf_login_form_process() {
     if (!isset($_POST['slf-login'])) return;
 
-    $h_captcha_handler = new HCaptchaHandler($_POST['h-captcha-response']);
+    $h_captcha_handler = new SlfHCaptchaHandler($_POST['h-captcha-response']);
 
     if (!$h_captcha_handler->is_verified()) {
       $this->error_message = $h_captcha_handler->get_error_message();
