@@ -32,7 +32,7 @@ class SlfHCaptchaHandler {
   private function params() {
     return [
       'response' => $this->token,
-      'secret' => '0xb9F553E3c189f8E2EC655Df8a78a05551F557Fad'
+      'secret' => get_option('slf_h_captcha_secret')
     ];
   }
 

@@ -9,9 +9,13 @@
     <input type='password' class='slf-form-control' id='slf-password' name='slf-password'>
   </p>
 
-  <p><div class='h-captcha' data-sitekey='96111882-7d47-4574-ab00-5ada7a8575fd'></div></p>
+  <?php if (get_option('slf_h_captcha') === 'slf_h_captcha') { ?>
+    <p><div class='h-captcha' data-sitekey='<?php echo get_option('slf_h_captcha_sitekey'); ?>'></div></p>
+  <?php } ?>
 
-  <p><?php echo $this->error_message; ?></p>
+  <?php if ($this->error_message !== '') { ?>
+    <p><?php echo $this->error_message; ?></p>
+  <?php } ?>
 
   <p><input type='submit' value='Login' id='slf-login' name='slf-login'></p>
 </form>

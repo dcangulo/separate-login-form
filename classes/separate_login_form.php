@@ -10,6 +10,8 @@ class SeparateLoginForm {
     add_action('init', [$this, 'slf_login_form_process']);
     add_action('wp_enqueue_scripts', [$this, 'slf_login_form_styles']);
     add_action('wp_enqueue_scripts', [$this, 'slf_login_form_scripts']);
+    add_action('admin_menu', [$this, 'slf_settings_page']);
+    add_action('admin_init', [$this, 'slf_settings']);
   }
 
   public function slf_check_session() {
@@ -35,12 +37,14 @@ class SeparateLoginForm {
   public function slf_login_form_process() {
     if (!isset($_POST['slf-login'])) return;
 
-    $h_captcha_handler = new SlfHCaptchaHandler($_POST['h-captcha-response']);
+    if (get_option('slf_h_captcha') === 'slf_h_captcha') {
+      $h_captcha_handler = new SlfHCaptchaHandler($_POST['h-captcha-response']);
 
-    if (!$h_captcha_handler->is_verified()) {
-      $this->error_message = $h_captcha_handler->get_error_message();
+      if (!$h_captcha_handler->is_verified()) {
+        $this->error_message = $h_captcha_handler->get_error_message();
 
-      return;
+        return;
+      }
     }
 
     $username = esc_sql($_POST['slf-username']);
@@ -74,5 +78,22 @@ class SeparateLoginForm {
   public function slf_login_form_scripts() {
     wp_register_script('slf-form-captcha', 'https://hcaptcha.com/1/api.js');
     wp_enqueue_script('slf-form-captcha');
+  }
+
+  public function slf_settings_page() {
+    add_options_page(
+      'Separate Login Form', 'Separate Login Form', 'manage_options',
+      'slf_plugin_settings', [$this, 'slf_option_page_content']
+    );
+  }
+
+  public function slf_option_page_content() {
+    include(SLF_ROOT_PATH . 'views/slf_settings.php');
+  }
+
+  public function slf_settings() {
+    register_setting('slf_plugin_settings', 'slf_h_captcha_sitekey');
+    register_setting('slf_plugin_settings', 'slf_h_captcha_secret');
+    register_setting('slf_plugin_settings', 'slf_h_captcha');
   }
 }
