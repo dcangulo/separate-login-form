@@ -9,11 +9,11 @@
     <input type='password' class='slf-form-control' id='slf-password' name='slf-password'>
   </p>
 
-  <?php if (get_option('slf_h_captcha') === 'slf_h_captcha') { ?>
+  <?php if (get_option('slf_h_captcha')) { ?>
     <p><div class='h-captcha' data-sitekey='<?php echo get_option('slf_h_captcha_sitekey'); ?>'></div></p>
   <?php } ?>
 
-  <?php if ($this->error_message !== '') { ?>
+  <?php if ($this->error_message) { ?>
     <p><?php echo $this->error_message; ?></p>
   <?php } ?>
 

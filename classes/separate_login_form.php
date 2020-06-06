@@ -37,7 +37,7 @@ class SeparateLoginForm {
   public function slf_login_form_process() {
     if (!isset($_POST['slf-login'])) return;
 
-    if (get_option('slf_h_captcha') === 'slf_h_captcha') {
+    if (get_option('slf_h_captcha')) {
       $h_captcha_handler = new SlfHCaptchaHandler($_POST['h-captcha-response']);
 
       if (!$h_captcha_handler->is_verified()) {

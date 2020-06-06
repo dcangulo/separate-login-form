@@ -25,8 +25,8 @@
         <th><label for='slf_h_captcha'>Activate hCaptcha</label></th>
         <td>
           <label for='slf_h_captcha'>
-            <?php $slf_h_captcha = get_option('slf_h_captcha') === 'slf_h_captcha' ? 'checked=""' : ''; ?>
-            <input name='slf_h_captcha' type='checkbox' id='slf_h_captcha' value='slf_h_captcha' <?php echo $slf_h_captcha; ?>> Use hCaptcha
+            <?php $slf_h_captcha = get_option('slf_h_captcha') ? 'checked=""' : ''; ?>
+            <input name='slf_h_captcha' type='checkbox' id='slf_h_captcha' value='slf_h_captcha' checked="false"> Use hCaptcha
           </label>
           <p class='description'>This will show hCaptcha on the login form. Make sure the credentials above are correct.</p>
         </td>
