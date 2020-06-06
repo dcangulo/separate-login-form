@@ -7,11 +7,12 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-blueviolet.svg?style=for-the-badge)](https://github.com/dcangulo/separate-login-form/pulls)
 [![saythanks](https://img.shields.io/badge/say-thanks-ff69b4.svg?style=for-the-badge)](https://wordpress.org/support/plugin/separate-login-form/reviews/#new-post)
 
-Display a login form on any page, post, or custom post type.
+Display a login form with captcha on any page, post, or custom post type.
 
 Just use the shortcode `[separate_login_form]` to display a login form.
 
-Please rate and review the plugin if you find it useful.
+[Please rate and review the plugin if you find it useful.](https://wordpress.org/support/plugin/separate-login-form/reviews/#new-post)
+
 Find my other works here: [https://www.davidangulo.xyz/portfolio/](https://www.davidangulo.xyz/portfolio/)
 
 ## Installation
@@ -23,22 +24,16 @@ Find my other works here: [https://www.davidangulo.xyz/portfolio/](https://www.d
 
 ## Installation using Composer
 
-1. In your terminal run `composer require wpackagist-plugin/separate-login-form`.
+```
+composer require wpackagist-plugin/separate-login-form
+```
 
 ## Frequently Asked Questions
 
-Do you have any question? You may contact me using the email [hello@davidangulo.xyz](mailto:hello@davidangulo.xyz)
+Do you have any question/s? You may contact me using the email [hello@davidangulo.xyz](mailto:hello@davidangulo.xyz)
 
 ## Bug Reports
-You can open an issue by clicking [this link](https://github.com/dcangulo/separate-login-form/issues/new).
-
-## Upcoming Features
-1. Add CAPTCHA.
-2. Support different form designs and custom CSS styles.
-3. Disable default WordPress login.
-4. Seprate logout page.
-5. Add Gutenberg block.
-6. Track failed login attempts.
+[Open an issue.](https://github.com/dcangulo/separate-login-form/issues/new)
 
 ## License
 Copyright © 2020 David Angulo, released under the GPL2 license, see [LICENSE](LICENSE).
