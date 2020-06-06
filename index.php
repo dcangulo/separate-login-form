@@ -2,7 +2,7 @@
 /*
   Plugin Name: Separate Login Form
   Plugin URI: https://www.davidangulo.xyz/portfolio/separate-login-form/
-  Description: Display a login form on any page, post, or custom post type.
+  Description: Display a login form with captcha on any page, post, or custom post type.
   Version: 3.0.0.0
   Author: David Angulo
   Author URI: https://www.davidangulo.xyz/
