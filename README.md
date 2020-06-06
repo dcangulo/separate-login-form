@@ -1,4 +1,4 @@
-![](https://ps.w.org/separate-login-form/assets/screenshot-1.jpg)
+![](assets/screenshot-1.jpg)
 
 # Separate Login Form
 
