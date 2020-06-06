@@ -25,12 +25,6 @@ Find my other works here: [https://www.davidangulo.xyz/portfolio/](https://www.d
 3. Find the plugin entitled **Separate Login Form** by **David Angulo** then click **Install Now**.
 4. Click **Activate** once the plugin is installed.
 
-== Installation using Composer ==
-
-```
-composer require wpackagist-plugin/separate-login-form
-```
-
 == Bug Reports ==
 [Open an issue.](https://github.com/dcangulo/separate-login-form/issues/new)
 
