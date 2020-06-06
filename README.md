@@ -3,8 +3,8 @@
 # Separate Login Form
 
 [![GitHub version](https://img.shields.io/wordpress/plugin/v/separate-login-form?color=brightgreen&style=for-the-badge)](https://wordpress.org/plugins/separate-login-form/)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](https://github.com/dcangulo/separate-login-form/pulls)
 [![GPLv2 license](https://img.shields.io/badge/License-GPLv2-brightgreen.svg?style=for-the-badge)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-blueviolet.svg?style=for-the-badge)](https://github.com/dcangulo/separate-login-form/pulls)
 [![saythanks](https://img.shields.io/badge/say-thanks-ff69b4.svg?style=for-the-badge)](https://wordpress.org/support/plugin/separate-login-form/reviews/#new-post)
 
 Display a login form on any page, post, or custom post type.
