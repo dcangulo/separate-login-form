@@ -1,9 +1,9 @@
 === Separate Login Form ===
 Contributors: dcangulo
-Plugin URI: https://www.davidangulo.xyz/portfolio/separate-login-form/
+Plugin URI: https://github.com/dcangulo/separate-login-form
 Tags: admin, user, login, captcha, custom, separate, shortcode
 Requires at least: 4.8.5
-Tested up to: 5.4.2
+Tested up to: 5.9.0
 Requires PHP: 7.2
 Stable tag: trunk
 License: GPL2
@@ -38,6 +38,9 @@ Do you have any question/s? You may contact me using the email [hello@davidangul
 3. Separate Login Form captcha credentials and settings.
 
 == Changelog ==
+
+= 3.1.0 =
+* Test against WordPress 5.9.0.
 
 = 3.0.0.1
 * Updated screenshots.
